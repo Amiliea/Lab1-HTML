@@ -1,0 +1,79 @@
+:root{
+--bg: #ffffff;
+--card: #ffffff;
+--accent: #4b6cff;
+--muted: #6b7280;
+--radius: 14px;
+--shadow: 0 8px 24px rgba(45,55,70,0.08);
+--max-width: 720px;
+}
+
+
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+margin:0;
+font-family: 'Times New Roman', Times, serif;
+background: linear-gradient(180deg, var(--bg), #b7eb90 60%);
+color:#111827;
+display:flex;
+align-items:center;
+justify-content:center;
+padding:32px;
+}
+
+.avatar {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;    
+  object-fit: cover;     
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.card{
+width:100%;
+max-width:var(--max-width);
+background:var(--card);
+border-radius:var(--radius);
+box-shadow:var(--shadow);
+padding:28px;
+display:flex;
+flex-direction:column;
+gap:18px;
+}
+
+
+.card__header{display:flex;flex-direction:column;gap:6px}
+.name{
+font-size:28px;
+margin:0;
+letter-spacing:0.2px;
+}
+.subtitle{
+margin:0;
+color:var(--muted);
+font-size:14px;
+}
+
+
+section{padding-top:6px;border-top:1px solid #eef2ff}
+section h2{margin:12px 0 8px;font-size:16px;color:#98adf1}
+section p{margin:0;color:#060708;line-height:1.5}
+
+
+.hobbies ul, .contacts__list{margin:0;padding-left:18px}
+.hobbies li{margin-bottom:8px}
+
+
+.contacts__list a{color:var(--accent);text-decoration:none}
+.contacts__list a:hover{text-decoration:underline}
+
+
+.card__footer{display:flex;justify-content:flex-end;padding-top:8px;color:var(--muted)}
+
+
+/* Responsive */
+@media (max-width:520px){
+.card{padding:18px;border-radius:12px}
+.name{font-size:22px}
+}

@@ -1,0 +1,55 @@
+<html lang="ru">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Визитка — Борщ Эмилия</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<main class="card">
+<img src="c:\Users\Hi-tech\Pictures\photo_2025-03-08_16-07-22.jpg" alt="Моё фото" class="avatar">
+<header class="card__header">
+<h1 class="name">Борщ Эмилия</h1>
+<p class="subtitle">Начинающий разработчик / Студент / Люблю кофе и десерты</p>
+</header>
+
+
+<section class="about">
+<h2>Обо мне</h2>
+<p>
+Коротко обо мне: Мне интересен веб-дизайн. Создание красивых и эстетичных сайтов и приложений для пользователей.
+</p>
+</section>
+
+
+<section class="hobbies">
+<h2>Хобби</h2>
+<ul>
+<li>Танцы и пение</li>
+<li>Готовка различных блюд и вышивание крестиком</li>
+<li>Фотография и прогулки на природе</li>
+</ul>
+</section>
+
+
+<section class="contacts">
+<h2>Контакты</h2>
+<ul class="contacts__list">
+<li><strong>Email:</strong> <a href="mailto:you@example.com">borsemilia89@gmail.com</a></li>
+<li><strong>Телефон:</strong> <a href="tel:+1234567890">+373 77794351</a></li>
+<li><strong>GitHub:</strong> <a href="https://github.com/yourname" target="_blank" rel="noopener">github.com/Amiliea</a></li>
+</ul>
+</section>
+
+
+<footer class="card__footer">
+<small>© <span id="year"></span> Борщ Эмилия — Все права защищены</small>
+</footer>
+</main>
+
+
+<script>
+document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
